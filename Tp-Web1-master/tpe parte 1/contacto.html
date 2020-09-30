@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>El Rey del bajon.</title>
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"><i class="fas fa-bars"></i>
+        </label>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html"><span class="icono"></span><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="nosotros.html"><span class="icono"></span><i class="fas fa-carrot"></i> Nosotros</a></li>
+                <li><a href="galeria.html"><span class="icono"></span><i class="fas fa-drumstick-bite"></i> Galeria</a></li>
+                <li><a href="menu.html"><span class="icono"></span><i class="fas fa-utensils"></i> Menu</a></li>
+                <li><a href="contacto.html"><span class="icono"></span><i class="fas fa-fish"></i> Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="logo-contact-container">
+
+        <div class="logo">
+            <h2>El Rey del bajon <i class="fas fa-crown"></i>.</h2>
+        </div>
+        <div class="contactInfo">
+            <p class="contactInfo-phone">
+                <span class="contactInfo-phone"><i class="fas fa-phone"></i> +02266444633</span>
+            </p>
+            <p class="contactInfo-address">
+                <span class="icon-ubicacion"><i class="fas fa-map-marker-alt"></i> 14 de julio 335-Tandil, Argentina</span>
+            </p>
+        </div>  
+
+    </div>
+    <section class="banner">
+        <img src="img/contacto/banner-contacto.jpg" alt="banner" class="banner--img">
+        <div class="banner--contenido">Deje aqui su sugerencia queja o consulta.</div>
+    </section>
+
+    <main>
+
+       <div class="container-form">
+            <form action="" class="form" onsubmit="return validar();">
+                <div class="form-header">
+                    <h1 class="columna--title-form">
+                        Contacto:
+                    </h1>
+                </div>
+                <div class="container-label-input">
+                <label for="nombre" class="form-label">Nombre y Apellido:</label>
+                <input type="text" class="form-input-nombre" required>
+        
+                <label for="asunto" class="form-label">Asunto:</label>
+                <input type="text" class="form-input-asunto" required>
+               
+                <label for="correo" class="form-label">Correo:</label>
+                <input type="email" class="form-input-correo"required>
+
+                <label for="mensaje" class="form-label-mensaje" >Mensaje</label>
+                <textarea class="form-textarea" placeholder="Escriba su consulta, queja o sugerencia."></textarea>
+
+                <label for="captcha" class="c-captcha"> ¿ Eres un humano ? </label>
+                <label for="refresh" class="captchaRefresh" id="captchaRefresh"><i class="fas fa-redo-alt"></i></label>
+                                <br>
+                <p id="preguntaCaptcha" class="preguntaCaptcha"></p>
+                <input type="text" name="captcha" id="captcha" class="form-input-captcha">
+                <input type="button" id="btn-captcha" class="btnCaptcha" value="Check">
+                
+                <input type="submit" class="btncontacto" value="Enviar">
+                </div>
+            </form>
+       </div> 
+
+    </main>
+    <footer class="main-footer">
+    <div class="container-footer">
+        <div class="columnaI">
+            <h2 class="columna--title">Contáctanos</h2>
+            <p class="columna--txt"><i class="fas fa-map-marker-alt"></i> 14 de julio 335 - Tandil - Argentina</p>
+            <p class="columna--txt"><i class="fas fa-phone"></i> +02266444633</p>
+            <p class="columna--txt"><i class="far fa-envelope"></i>  Elreydelbajon@hotmail.com</p>
+        </div>
+        <div class="columnaD">
+            <h2 class="columna--title">Siguenos en nuestras redes</h2> 
+            <p class="columna--txt"><a href="https://www.facebook.com//" target="_blank"><i class="fab fa-facebook"></i>  Siguenos en Facebook</a></p>
+            <p class="columna--txt"><a href="#"><i class="fab fa-twitter-square"></i>  Siguenos en Twitter</a></p>
+            <p class="columna--txt"><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i>  Siguenos en Instagram</a></p>
+        </div>
+            <p class="copy">© 2019 El rey del bajon. | Todos los derechos reservados</p>
+        </div>
+    </footer>
+    
+    <script src="js/validate.js"></script>
+</body>
+</html>
