@@ -1,15 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Pacifico');
 * {
-    overflow-x: hidden;
-    box-sizing: border-box;
-}
-body {
-    margin: 0;
-    font-family: sans-serif;
-}
-header {
-    height: auto;
-    width: 100%;
+    overflow-
     background: #E15934;
     border-bottom: 1px solid white;
 }
